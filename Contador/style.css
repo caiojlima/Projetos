@@ -50,8 +50,13 @@ a {
   color: white;
 }
 
+a:hover {
+  font-size: 20px;
+}
+
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 170px;
+  margin-top: 150px;
+  height: 30px;
 }
