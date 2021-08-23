@@ -8,7 +8,7 @@ const tMinutes = document.getElementById('texto-minuto');
 const tHours = document.getElementById('texto-hora');
 const tDays = document.getElementById('texto-dia');
 const tMonths = document.getElementById('texto-mes');
-const img = document.getElementsByTagName('img')[0];
+const footer = document.getElementsByTagName('a')[0];
 
 function textFormat(time) {
   const tempoForm = Math.floor(time);
@@ -54,8 +54,14 @@ function countTime() {
   }  
 }
 
-// function flipImage () {
-
-// }
+function changeLinkColor() {
+  const style = getComputedStyle(footer);
+  if (footer.style.color === 'white'){
+    footer.style.color = 'rgb(218, 77, 77)';
+  } else {
+    footer.style.color = 'white';
+  }
+}
 
 setInterval(countTime, 1000);
+setInterval(changeLinkColor, 300);

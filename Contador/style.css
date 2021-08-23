@@ -4,14 +4,14 @@
   margin: 0;
 }
 body {
- background-image: url('background.jpeg');
+ background-image: url('background.png');
  background-size: 1366px;
  background-position-y: 20cm;
  background-position: fixed;
  color: white;
  font-family: 'Bebas Neue', sans-serif;
 }
-header {
+section {
   display: flex;  
   justify-content: center;
   font-size: 1.5cm;
@@ -44,4 +44,15 @@ div {
 
 img{
   width: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
 }
