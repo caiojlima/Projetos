@@ -5,9 +5,8 @@
 }
 body {
  background-image: url('new_background.jpg');
- background-size: 1366px;
- background-position-y: 20cm;
- background-position: fixed;
+ background-size: cover;
+ background-position: center;
  color: white;
  font-family: 'Bebas Neue', sans-serif;
 }
