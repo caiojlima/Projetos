@@ -60,3 +60,75 @@ footer {
   margin-top: 150px;
   height: 30px;
 }
+
+@media screen and (min-width: 1919px) {
+  body {
+    font-size: xxx-large;
+  }
+  #labels {
+    margin-top: 150px;
+    width: 1560px;    
+  }
+  div {
+    width: 310px;
+    text-align: center;
+  }
+  footer {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  #labels {
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ div {
+  width: 20%;
+  text-align: center;
+}
+#a{
+  order: 1;
+}
+#b{
+  order: 3;
+}
+#c{
+  order: 5;
+}
+#d{
+  order: 7;
+}
+#e{
+  order: 9;
+}
+#f{
+  order: 2;
+}
+#g{
+  order: 4;
+}
+#h{
+  order: 6;
+}
+#i{
+  order: 8;
+}
+#j{
+    order: 10;
+}
+section {
+  margin-top: 50px;
+  width: 100%;
+  font-size: 15px;
+}
+.count {
+  font-size: 30px;
+}
+
+footer {
+  margin-top: 50px;
+}
+}
