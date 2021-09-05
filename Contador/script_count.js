@@ -27,27 +27,27 @@ function countTime() {
   hours.innerText = textFormat(tempoEmMili/1000/60/60%24);
   days.innerText = textFormat(tempoEmMili/1000/60/60/24%30);
   months.innerText = textFormat(tempoEmMili/1000/60/60/24/30%12);
-  if (seconds.innerText === '01') {
+  if (seconds.innerText === '01' || seconds.innerText === '00') {
     tSeconds.innerText = 'Segundo';
   } else if (seconds.innerText !== '01') {
     tSeconds.innerText = 'Segundos';
   }
-  if (minutes.innerText === '01') {
+  if (minutes.innerText === '01' || minutes.innerText === '00') {
     tMinutes.innerText = 'Minuto';
   } else if (minutes.innerText !== '01') {
     tMinutes.innerText = 'Minutos';
   }
-  if (hours.innerText === '01') {
+  if (hours.innerText === '01' || hours.innerText === '00') {
     tHours.innerText = 'Hora';
   } else if (hours.innerText !== '01') {
     tHours.innerText = 'Horas';
   }
-  if (days.innerText === '01') {
+  if (days.innerText === '01' || days.innerText === '00') {
     tDays.innerText = 'Dia';
   } else if (days.innerText !== '01') {
     tDays.innerText = 'Dias';
   }
-  if (months.innerText === '01') {
+  if (months.innerText === '01' || months.innerText === '00') {
     tMonths.innerText = 'Mês';
   } else if (months.innerText !== '01') {
     tMonths.innerText = 'Meses';
